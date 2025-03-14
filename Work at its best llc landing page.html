@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work at Its Best LLC</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .navbar {
+            background-color: #0073e6;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            align-items: center;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 18px;
+            font-weight: normal;
+            text-decoration: none;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+        .navbar .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: auto;
+        }
+        .navbar .menu li {
+            padding: 0 15px;
+        }
+        .navbar .menu li.apply-now {
+            margin-left: auto;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
+        .navbar .menu li a:hover {
+            background-color: #005bb5;
+            border-radius: 5px;
+        }
+        .cta-button {
+            background-color: #ff9900;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #e68a00;
+            transform: scale(1.05);
+        }
+        .hero {
+            background: url('painter.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .service {
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .videos-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+        .videos-section h2 {
+            color: #0073e6;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video-container iframe {
+            width: 320px;
+            height: 180px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="logo">Work at Its Best LLC</a>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="apply-now"><a href="#">Apply Now</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="cta-button">Post a Job</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <h1>Connecting Top Talent with the Best Employers!</h1>
+        <button class="cta-button" onclick="document.getElementById('apply').scrollIntoView();">Apply Now</button>
+    </div>
+
+    <div class="videos-section">
+        <h2>Our Work in Action</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/EKRPJ9QI-Rs" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/oDAmr60J4IE" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/JMphrDTgRwQ" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/x5MqjSghU5w" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SPeVitghXQk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Work at Its Best LLC. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
